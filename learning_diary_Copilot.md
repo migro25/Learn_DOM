@@ -1,24 +1,24 @@
 Task 1:
 
 1. Frage:
-Document is a built-in object representing the current HTML page. 
-Here, "document" finds the <h1> element, and textContent changes its text. It's provided by the browser -> not a JavaScript keyword. 
-Usually it isn't available in node.js.
+Das Document ist ein eingebautes Objekt, das die aktuelle HTML-Seite repräsentiert.
+Hier findet „document“ das <h1>-Element, und textContent ändert dessen Text. Es wird vom Browser bereitgestellt -> ist also kein JavaScript-Schlüsselwort.
+Normalerweise ist es in Node.js nicht verfügbar.
 
 2. Frage:
-You can use document to interact with the current webpage's html (the dom). 
-examples:
--> // Read or change its text
+Man kann document verwenden, um mit dem HTML der aktuellen Webseite (dem DOM) zu interagieren.
+Beispiele:
+-> // Text lesen oder ändern
 console.log(button.textContent);
 button.textContent = "Clicked!";
 
--> // Change its style or CSS classes
+-> // Stil oder CSS-Klassen ändern
 button.style.color = "blue";
 button.classList.add("active");
 
-Common tools include querySelector() -> find elements,
-createElement() -> to make them,
-addEventListener() -> to respond to events
+Häufig verwendete Werkzeuge sind querySelector() -> zum Finden von Elementen,
+createElement() -> zum Erstellen von Elementen,
+addEventListener() -> um auf Ereignisse (Events) zu reagieren
 
 Task 2:
 
