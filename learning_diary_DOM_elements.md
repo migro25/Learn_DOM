@@ -95,3 +95,7 @@ select:
 select
 Beim Select-Element gibt value den Wert der aktuell ausgewählten Option zurück und selectedIndex deren Position. Über options greift man auf alle Optionen zu, über selectedOptions auf alle ausgewählten Optionen. Mit multiple erlaubt man eine Mehrfachauswahl, und size legt fest, wie viele Zeilen sichtbar sind. length gibt die Anzahl der Optionen an. Wie beim Input gibt es auch hier name, disabled, required und form. Mit add() und remove() kann man Optionen hinzufügen oder entfernen.
 Beispiel: console.log(document.querySelector("select").value); gibt den Wert der ausgewählten Option aus.
+
+option:
+Beim Option-Element ist value der Wert, der gesendet wird, und text der Text, der angezeigt wird. selected gibt an, ob die Option gerade ausgewählt ist, und defaultSelected, ob sie im HTML vorausgewählt war. index ist die Position der Option im Select. Mit disabled kann man die Option sperren, sodass sie nicht auswählbar ist, und label ist eine alternative Beschriftung. Über form erhält man das zugehörige Formular.
+Beispiel: document.querySelector("option").selected = true; wählt die erste Option aus.
