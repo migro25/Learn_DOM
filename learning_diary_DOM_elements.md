@@ -68,3 +68,8 @@ HTML:
 action: Die Adresse, zu der die Daten geschickt werden sollen (z. B. ein Skript auf dem Server).
 
 method: Wie sie geschickt werden (GET oder POST).
+
+Task 5:
+
+button
+Beispiel: document.querySelector("button").disabled = true; deaktiviert den Button.
