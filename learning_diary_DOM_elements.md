@@ -72,4 +72,5 @@ method: Wie sie geschickt werden (GET oder POST).
 Task 5:
 
 button
+Beim Button-Element kann man über JavaScript auf type, disabled, name, value, form und autofocus zugreifen. Mit type legt man fest, ob der Button ein Formular absendet (submit), es zurücksetzt (reset) oder ein normaler Button ist (button). Mit disabled kann man den Button deaktivieren, sodass er nicht mehr klickbar ist. name und value werden beim Absenden des Formulars mitgeschickt. Über form erhält man das Formular, zu dem der Button gehört, und autofocus sorgt dafür, dass der Button beim Laden der Seite automatisch den Fokus bekommt.
 Beispiel: document.querySelector("button").disabled = true; deaktiviert den Button.
