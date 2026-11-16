@@ -1,3 +1,4 @@
+Task 3:
 my element: form
 
 1. Frage: Which parameters of this DOM element can be accessed from javascript?
@@ -31,7 +32,7 @@ Für die Auswahl „Small“ oder „Large“ kann man prüfen, welcher Radiobut
 form.querySelector('input[name="size"]:checked')?.value
 ```
 
-Das ergibt `"small"` oder `"large"`. Wenn keiner ausgewählt ist, ergibt es `undefined`.
+Das ergibt `"small"` oder `"large"`. Wenn keiner ausgewählt ist, ergibt es `undefined`. Bei einem HTML Formular.
 
 2. Frage: What do these parameters do?
 
@@ -49,4 +50,21 @@ const form = document.getElementById("myForm");
 const name = form.querySelector("#name").value;
 ```
 
-Damit greifst du auf das Formular zu und liest den eingegebenen Namen aus.
+Damit greift man auf das Formular zu und liest den eingegebenen Namen aus.
+
+Was ich noch gelernt habe:
+
+Interaktivität (event.preventDefault()): Mit JavaScript lässt sich das automatische Neuladen der Seite beim Absenden verhindern. So können Eingaben vorab validiert oder per Skript verarbeitet werden (z. B. Auslesen von .value und .checked).
+
+Wie schickt man das Formular dann ab?:
+via JS: fetch
+HTML:
+<form action="zielseite.php" method="POST">
+  <input type="text" name="name" value="Michael">
+  <button type="submit">Abschicken</button>
+</form>
+
+->>
+action: Die Adresse, zu der die Daten geschickt werden sollen (z. B. ein Skript auf dem Server).
+
+method: Wie sie geschickt werden (GET oder POST).

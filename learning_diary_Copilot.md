@@ -1,11 +1,15 @@
 Task 1:
 
-1. Frage:
+1. Frage: What is the "document" variable in javascript?
+
 Das Document ist ein eingebautes Objekt, das die aktuelle HTML-Seite repräsentiert.
 Hier findet „document“ das <h1>-Element, und textContent ändert dessen Text. Es wird vom Browser bereitgestellt -> ist also kein JavaScript-Schlüsselwort.
 Normalerweise ist es in Node.js nicht verfügbar.
 
-2. Frage:
+
+
+2. Frage: What can I do with the "document" variable?
+
 Man kann document verwenden, um mit dem HTML der aktuellen Webseite (dem DOM) zu interagieren.
 Beispiele:
 -> // Text lesen oder ändern
@@ -22,7 +26,8 @@ addEventListener() -> um auf Ereignisse (Events) zu reagieren
 
 Task 2:
 
-1. Frage: 
+1. Frage: How can I access the list "myList" in the html file?
+
 Mit dem Befehl: ""const myList = document.getElementById("myList");" sucht man in der HTML-Seite nach dem Element mit id="myList" - das ist hier die gesamt <ul>-Liste. Dieses Element wird in der JavaScript-Variablen myList gespeichert.
 
 Mit den Befehlen von CoPilot:
@@ -33,7 +38,8 @@ console.log(items[0].textContent); // zeigt "Item 1"
 
 Ein Hinweis bekam ich noch: "myList ist nicht automatisch ein JavaScript-Array. Es ist eine Referenz auf das HTML-Element. Die Liste steht in deiner index.html."
 
-2. Frage:
+2. Frage: How can I change the list "myList" in the html file?
+
 Zuerst wählt man die Liste mit document.getElementById("myList") aus. Danach kann man ihre Einträge mit JavaScript verändern.
 
 Der Code dafür:
