@@ -86,3 +86,7 @@ Beispiel: document.querySelector("div").textContent = "Hallo Welt"; schreibt ein
 table:
 Beim Table-Element kann man über rows auf alle Zeilen der Tabelle zugreifen, über tBodies auf die Tabellenkörper und über tHead und tFoot auf den Kopf- bzw. Fußbereich. caption ist die Überschrift der Tabelle. Mit insertRow() und deleteRow() kann man Zeilen einfügen oder löschen. Jede Zeile besitzt wiederum cells für ihre Zellen und die Methode insertCell(), um neue Zellen hinzuzufügen. Zellen haben außerdem colSpan und rowSpan, mit denen man festlegt, über wie viele Spalten oder Zeilen sie sich erstrecken.
 Beispiel: document.querySelector("table").insertRow().insertCell().textContent = "Neu"; fügt eine neue Zeile mit einer Zelle hinzu.
+
+ul:
+Auch das Ul-Element hat kaum eigene Eigenschaften. Die Eigenschaft type für die Art der Aufzählungszeichen ist veraltet und wird heute über CSS gelöst. Man arbeitet hauptsächlich mit children, um auf die einzelnen Listeneinträge (li) zuzugreifen, und mit appendChild() oder removeChild(), um Einträge hinzuzufügen oder zu entfernen.
+Beispiel: let li = document.createElement("li"); li.textContent = "Punkt"; document.querySelector("ul").appendChild(li); fügt einen neuen Listeneintrag hinzu.
