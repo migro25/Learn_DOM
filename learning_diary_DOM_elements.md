@@ -82,3 +82,7 @@ Beispiel: let name = document.querySelector("input").value; liest den eingegeben
 div:
 Das Div-Element ist ein reiner Container und hat praktisch keine eigenen Eigenschaften. Man verwendet die allgemeinen Eigenschaften, die alle HTML-Elemente besitzen: id, className und classList für CSS-Klassen, style für Inline-CSS, innerHTML für den HTML-Inhalt, textContent für den reinen Text, hidden zum Ausblenden und children für die enthaltenen Elemente. Mit Methoden wie appendChild() oder remove() kann man Inhalte hinzufügen oder entfernen.
 Beispiel: document.querySelector("div").textContent = "Hallo Welt"; schreibt einen neuen Text in das Div.
+
+table:
+Beim Table-Element kann man über rows auf alle Zeilen der Tabelle zugreifen, über tBodies auf die Tabellenkörper und über tHead und tFoot auf den Kopf- bzw. Fußbereich. caption ist die Überschrift der Tabelle. Mit insertRow() und deleteRow() kann man Zeilen einfügen oder löschen. Jede Zeile besitzt wiederum cells für ihre Zellen und die Methode insertCell(), um neue Zellen hinzuzufügen. Zellen haben außerdem colSpan und rowSpan, mit denen man festlegt, über wie viele Spalten oder Zeilen sie sich erstrecken.
+Beispiel: document.querySelector("table").insertRow().insertCell().textContent = "Neu"; fügt eine neue Zeile mit einer Zelle hinzu.
