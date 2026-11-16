@@ -90,3 +90,8 @@ Beispiel: document.querySelector("table").insertRow().insertCell().textContent =
 ul:
 Auch das Ul-Element hat kaum eigene Eigenschaften. Die Eigenschaft type für die Art der Aufzählungszeichen ist veraltet und wird heute über CSS gelöst. Man arbeitet hauptsächlich mit children, um auf die einzelnen Listeneinträge (li) zuzugreifen, und mit appendChild() oder removeChild(), um Einträge hinzuzufügen oder zu entfernen.
 Beispiel: let li = document.createElement("li"); li.textContent = "Punkt"; document.querySelector("ul").appendChild(li); fügt einen neuen Listeneintrag hinzu.
+
+select:
+select
+Beim Select-Element gibt value den Wert der aktuell ausgewählten Option zurück und selectedIndex deren Position. Über options greift man auf alle Optionen zu, über selectedOptions auf alle ausgewählten Optionen. Mit multiple erlaubt man eine Mehrfachauswahl, und size legt fest, wie viele Zeilen sichtbar sind. length gibt die Anzahl der Optionen an. Wie beim Input gibt es auch hier name, disabled, required und form. Mit add() und remove() kann man Optionen hinzufügen oder entfernen.
+Beispiel: console.log(document.querySelector("select").value); gibt den Wert der ausgewählten Option aus.
