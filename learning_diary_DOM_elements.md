@@ -99,3 +99,7 @@ Beispiel: console.log(document.querySelector("select").value); gibt den Wert der
 option:
 Beim Option-Element ist value der Wert, der gesendet wird, und text der Text, der angezeigt wird. selected gibt an, ob die Option gerade ausgewählt ist, und defaultSelected, ob sie im HTML vorausgewählt war. index ist die Position der Option im Select. Mit disabled kann man die Option sperren, sodass sie nicht auswählbar ist, und label ist eine alternative Beschriftung. Über form erhält man das zugehörige Formular.
 Beispiel: document.querySelector("option").selected = true; wählt die erste Option aus.
+
+canvas:
+Beim Canvas-Element legen width und height die Größe der Zeichenfläche in Pixeln fest. Mit getContext("2d") erhält man den Zeichenkontext, mit dem man zum Beispiel Rechtecke, Kreise, Texte oder Bilder zeichnen kann. Dieser Kontext hat selbst Eigenschaften wie fillStyle für die Füllfarbe, strokeStyle für die Linienfarbe, lineWidth für die Linienstärke und font für die Schriftart. Mit getContext("webgl") kann man 3D-Grafiken erstellen. Mit toDataURL() oder toBlob() kann man den Inhalt der Zeichenfläche als Bild exportieren.
+Beispiel: let ctx = document.querySelector("canvas").getContext("2d"); ctx.fillStyle = "red"; ctx.fillRect(10, 10, 100, 50); zeichnet ein rotes Rechteck.
