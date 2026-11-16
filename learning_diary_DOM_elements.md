@@ -71,6 +71,10 @@ method: Wie sie geschickt werden (GET oder POST).
 
 Task 5:
 
-button
+button:
 Beim Button-Element kann man über JavaScript auf type, disabled, name, value, form und autofocus zugreifen. Mit type legt man fest, ob der Button ein Formular absendet (submit), es zurücksetzt (reset) oder ein normaler Button ist (button). Mit disabled kann man den Button deaktivieren, sodass er nicht mehr klickbar ist. name und value werden beim Absenden des Formulars mitgeschickt. Über form erhält man das Formular, zu dem der Button gehört, und autofocus sorgt dafür, dass der Button beim Laden der Seite automatisch den Fokus bekommt.
 Beispiel: document.querySelector("button").disabled = true; deaktiviert den Button.
+
+input:
+Das Input-Element hat sehr viele Eigenschaften. Mit type bestimmt man die Art des Eingabefeldes, zum Beispiel text, password, number, email, checkbox, radio, file oder date. value enthält den aktuellen Inhalt des Feldes, defaultValue den ursprünglichen Wert aus dem HTML. name ist der Name, unter dem der Wert gesendet wird, und placeholder ist der graue Hinweistext in einem leeren Feld. Bei Checkboxen und Radio-Buttons gibt checked an, ob das Feld angehakt ist. Mit disabled wird das Feld gesperrt, mit readOnly kann man es nur noch lesen, und required macht es zum Pflichtfeld. Mit min, max und step legt man bei Zahlen und Daten Grenzen und Schrittweite fest, mit minLength und maxLength die erlaubte Textlänge. Über pattern kann man einen regulären Ausdruck zur Überprüfung angeben. Bei Datei-Feldern enthält files die ausgewählten Dateien. Mit den Methoden focus(), blur() und select() setzt oder entfernt man den Fokus bzw. markiert den Text.
+Beispiel: let name = document.querySelector("input").value; liest den eingegebenen Text aus.
